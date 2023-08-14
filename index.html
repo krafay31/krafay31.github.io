@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Website</title>
+    <!-- Link to Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assest/navbar.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+        <div class="container-fluid d-flex align-items-center">
+          <img src="assest/images/gammanew.png" alt="Logo" class="mr-auto" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#Home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#Services" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">|</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" id="search-icon"
+                  ><i class="fas fa-search"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-danger" href="#" class="nav-link"
+                  ><span class="text-warning"> Login</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Content -->
+      <!-- home page -->
+      <section
+        class="bg-dark text-light p-5 text-center vh-100 d-flex align-items-center justify-content-center"
+      >
+        <div class="container">
+          <div>
+            <h1>Taste the Creativity</h1>
+            <p>We make awesome graphic and web design</p>
+            <a class="btn btn-danger btn-lg" href="#"
+              ><span class="text-warning"> Get Started</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- services -->
+      <section
+        class="p-5 text-center align-items-center justify-content-center"
+      >
+        <div class="container">
+          <div>
+            <img src="assest/images/goodat.png" class="img-responsive" alt="" />
+            <h1>We are Good at</h1>
+            <p>SOME OF THESE STUFF UNDER</p>
+            <hr />
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-md-4">
+              <!-- Column 1 -->
+              <div
+                class="service-item text-center align-items-center d-flex flex-column"
+              >
+                <img
+                  src="assest/images/graphic.png"
+                  class="img-fluid"
+                  alt="Graphic Design"
+                />
+                <h2 style="color: yellow">GRAPHIC DESIGN</h2>
+                <p>We create stunning visuals that...</p>
+                <p>Leave a lasting impression.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <!-- Column 2 -->
+              <div
+                class="service-item text-center align-items-center d-flex flex-column"
+              >
+                <img
+                  src="assest/images/web.png"
+                  class="img-fluid"
+                  alt="Web Development"
+                />
+                <h2 style="color: yellow">Web Development</h2>
+                <p>We build responsive websites that...</p>
+                <p>Elevate your online presence.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <!-- Column 3 -->
+              <div
+                class="service-item text-center align-items-center d-flex flex-column"
+              >
+                <img
+                  src="assest/images/game.png"
+                  class="img-fluid"
+                  alt="Game Development"
+                />
+                <h2 style="color: yellow">Game Development</h2>
+                <p>We create immersive gaming experiences that...</p>
+                <p>Transport players to new worlds of excitement.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- portfolio -->
+      <section
+        class="p-5 text-center align-items-center justify-content-center"
+      >
+        <div class="container">
+          <div>
+            <img
+              src="assest/images/goodat.png"
+              class="img-responsive"
+              alt="Logo"
+            />
+            <h1>We are Good at</h1>
+            <p>SOME OF THESE STUFF UNDER</p>
+            <hr />
+          </div>
+          <div class="row justify-content-center mb-3">
+            <div class="col-auto">
+              <button class="category-btn" data-category="all">ALL</button>
+            </div>
+            <div class="col-auto">
+              <button class="category-btn" data-category="design">
+                Design
+              </button>
+            </div>
+            <div class="col-auto">
+              <button class="category-btn" data-category="code">Code</button>
+            </div>
+            <div class="col-auto">
+              <button class="category-btn" data-category="photo">Photo</button>
+            </div>
+          </div>
+          <div class="photo-collection">
+            <!-- Photos for different categories  -->
+            <!-- Gallery -->
+            <div class="row">
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <a href="#contact"
+                  ><img
+                    src="assest/images/blog-recent-4.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4 img-hover"
+                    alt="design"
+                /></a>
+                <a href="#contact"
+                  ><img
+                    src="assest/images/blog-1.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4 img-hover"
+                    alt="design"
+                /></a>
+              </div>
+
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <a href="#contact"
+                  ><img
+                    src="assest/images/blog-recent-3.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4 img-hover"
+                    alt="code"
+                /></a>
+                <a href="#contact"
+                  ><img
+                    src="assest/images/blog-2.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4 img-hover"
+                    alt="code"
+                /></a>
+              </div>
+
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <a href="#contact"
+                  ><img
+                    src="assest/images/blog-3.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4 img-hover"
+                    alt="photo"
+                /></a>
+                <a href="#contact"
+                  ><img
+                    src="assest/images/blog-4.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4 img-hover"
+                    alt="photo"
+                /></a>
+              </div>
+            </div>
+            <!-- Gallery -->
+          </div>
+          <a class="btn btn-danger btn-lg" href="#"
+            ><span class="text-warning">I Want More</span></a
+          >
+        </div>
+      </section>
+      <!-- about -->
+      
+      <section
+        class="p-5 text-center align-items-center justify-content-center"
+      >
+        <div class="container">
+          <div>
+            <img
+              src="assest/images/goodat.png"
+              class="img-responsive"
+              alt="Logo"
+            />
+            <h1>Some Stuff About Us</h1>
+            <p>THE GREAT TEAM</p>
+            <hr />
+            <p>
+              Our exceptional team is a symphony of creativity, expertise, and
+              innovation. With diverse talents spanning graphic design, web
+              development, and game design, we come together to craft unique and
+              captivating experiences. Our passion drives us to push boundaries
+              and deliver excellence, consistently transforming visions into
+              reality. We thrive on collaboration, harnessing the power of each
+              individual's strengths to create something greater than the sum of
+              its parts. With a shared commitment to quality and a spirit of
+              exploration, we're dedicated to shaping the future through our
+              unwavering dedication to design and development.
+            </p>
+          </div>
+          <div class="row">
+            <div
+              class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0 text-left"
+            >
+              <div>
+                <h3 style="text-align: left">Retina Design</h3>
+                <p style="text-align: left">
+                  Vestibulum ac diam sit amet quam vehicula elementum sed sit
+                  amet dui. Mauris blandit aliquet elit, eget tincidunt nibh
+                  pulvinar a. Donec rutrum congue leo eget malesuada. Mauris
+                  blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                  Pellentesque in ipsum id orci porta dapibus. Proin eget tortor
+                  risus. Donec sollicitudin molestie malesuada.
+                </p>
+                <a
+                  class="btn btn-danger btn-lg text-left"
+                  style="align-content: left"
+                  href="#"
+                  ><span class="text-warning"> Click to order</span></a
+                >
+              </div>
+            </div>
+            <div class="col-md-7">
+               <div>
+                  <img alt="Web Studio" class="img-fluid" src="assest/images/about.png" style="height: 300pt; width: 550pt; " />
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cards  -->
+
+      <section
+        class="p-5 text-center align-items-center justify-content-center"
+      >
+        <div class="container">
+          <div>
+            <h1 class="text-warning" style="font-weight: 700">Meet the team</h1>
+            <p>THE GREAT TEAM</p>
+            <hr />
+            <p>
+              Our exceptional team is a symphony of creativity, expertise, and
+              innovation. With diverse talents spanning graphic design, web
+              development, and game design, we come together to craft unique and
+              captivating experiences.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+                <img
+                  class="card-img-top img-fluid"
+                  src="assest/images/comments-2.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary btn-lg btn-block"
+                    >Appointment</a
+                  >
+                  <h5 class="card-title">Manager</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+                <img
+                  class="card-img-top img-fluid"
+                  src="assest/images/blog-recent-4.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary btn-lg btn-block"
+                    >Contact</a
+                  >
+                  <h5 class="card-title">Managment</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+                <img
+                  class="card-img-top img-fluid"
+                  src="assest/images/blog-inside-post.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary btn-lg btn-block">Team</a>
+                  <h5 class="card-title">Team</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+                <img
+                  class="card-img-top img-fluid"
+                  src="assest/images/blog-recent-1.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary btn-lg btn-block">About</a>
+                  <h5 class="card-title">Author</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sponsors  -->
+      <section
+        class="p-5 text-center align-items-center justify-content-center"
+      >
+        <div class="container row">
+         <div>
+            <p>
+               
+            </p>
+         </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+         <div >
+           <img
+             class="image"
+             src="assest/images/sponsorship-removebg-preview.png"
+             alt="Card image cap"
+           />
+         </div>
+       </div>
+       <div class="col-lg-3 col-md-6 mb-4">
+         <div >
+           <img
+             class="image"
+             src="assest/images/sponsorcola-removebg-preview.png"
+             alt="Card image cap"
+           />
+         </div>
+       </div>
+       <div class="col-lg-3 col-md-6 mb-4">
+         <div>
+           <img
+             class="image"
+             src="assest/images/sponsoraddi-removebg-preview.png"
+             alt="Card image cap"
+           />
+         </div>
+       </div>
+       <div class="col-lg-3 col-md-6 mb-4">
+         <div>
+           <img
+             class="image"
+             src="assest/images/sponsor-removebg-preview.png"
+             alt="Card image cap"
+           />
+         </div>
+       </div>
+      </div>
+      </section>
+
+      <!-- To Start  -->
+      <section
+      class="bg-dark text-light p-5 text-center d-flex align-items-center justify-content-center"
+    >
+      <div class="container">
+        <div>
+          <h2 style="font-weight: 600;">Start Your Project Now</h2>
+          <p>Leave your description and we start the engine.Don't worry,you can cancel anytime</p>
+          <a class="btn btn-danger btn-lg" href="#"
+            ><span class="text-warning"> Start Project</span></a
+          >
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Blog  -->
+    <section
+        class="p-5 text-center align-items-center justify-content-center"
+      >
+        <div class="container">
+          <div>
+            <img
+              src="assest/images/goodat.png"
+              class="img-responsive"
+              alt="Logo"
+            />
+            <h2 style="font-weight: 700">Read Our Blog</h2>
+            <p>NEW STORIES</p>
+            <hr />
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="assest/images/comments-2.jpg" alt="Card image cap" />
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary btn-lg btn-block">Tap to Read</a>
+                            <h5 class="card-title">content</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="assest/images/blog-recent-4.jpg" alt="Card image cap" />
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary btn-lg btn-block">Tap to Read</a>
+                            <h5 class="card-title">Managment</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="assest/images/blog-inside-post.jpg" alt="Card image cap" />
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary btn-lg btn-block">Tap to Read</a>
+                            <h5 class="card-title">Team</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <a class="btn btn-danger btn-lg " style="margin-top: 10px;" href="#"
+              ><span class="text-warning"> Get Started</span></a
+            >
+            </div>
+        </div>        
+          </div>
+        </div>
+      </section>
+      
+      <section class="bg-warning text-light p-5 text-center vh-80 d-flex align-items-center justify-content-center">
+         <div class="container">
+             <form class="mt-4">
+                 <div class="form-row justify-content-center">
+                     <div class="col-auto">
+                         <div class="input-group">
+                           <h3 style="font-weight:700; margin-right: 5px; color:black;">Subscribe to our Newsletter</h3><input type="email" class="form-control bottom-line-input" id="email" placeholder="Enter Email Address">
+                             <div class="input-group-append">
+                                 <button class="btn btn-dark" style="margin-left: 10px;" type="submit"><span class="text-warning">Subscribe</span></button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </form>
+         </div>
+     </section>
+
+     <footer class="bg-dark text-light p-5 text-left d-flex align-items-left justify-conten-left">
+      <div class="container p-4 ">
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div>
+               <img src="assest/images/gammanew.png" alt="Logo" class="mr-auto" />
+              <p class="mb-30 footer-desc">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+              <p style="margin-bottom: 0;">Created By <span class="text-primary">Rafay_Khan</span></p>
+               <p style="margin-top: 0;">© 2022 - <span class="text-warning">Bondi Inc</span></p>
+            </div>
+          </div>
+          <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
+            <div class="">
+              <h4>Links</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-decoration-none">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none">About Us</a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none">Our Services</a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none">Testimonials</a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none">Support</a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none">Terms and Condition</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6">
+            <div>
+              <h4>About Us</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-decoration-none">Sign In</a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none">Register </a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none">About Us</a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6">
+            <div>
+              <h4>Contact U</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <p>Get in touch with us via mail phone.We are waiting for your call or message</p>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-danger" href="#" class="nav-link"
+                    ><span class="text-warning" style="font-weight: 600;"> rafayk31@gmail.com</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+      <!-- Bootstrap JS scripts  -->
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+    </div>
+  </body>
+</html>
